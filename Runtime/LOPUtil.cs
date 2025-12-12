@@ -20,5 +20,18 @@ namespace LOP
             GameObject.Destroy(obj);
 #endif
         }
+
+        public static void Shuffle<T>(this Xoroshiro128Plus rng, T[] array)
+        {
+            int n = array.Length;
+            while (n > 1)
+            {
+                int k = rng.RangeInt(0, n--);
+                T temp = array[n];
+                array[n] = array[k];
+                array[k] = temp;
+            }
+
+        }
     }
 }
