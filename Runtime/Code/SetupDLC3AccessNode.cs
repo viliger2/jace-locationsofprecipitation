@@ -84,14 +84,14 @@ namespace LOP {
                 solusFight.ForcedBossFight = spawnCard;
             }
 
-            AccessCodesNodeData nodeData;
-            nodeData.node = accessNode;
-            nodeData.id = 0;
-
-            AccessCodesNodeData[] nodeDataArray = new AccessCodesNodeData[1];
-            nodeDataArray[0] = nodeData;
-
-            acMissionControllerComp.nodes = nodeDataArray;
+            acMissionControllerComp.nodes = new AccessCodesNodeData[]
+            {
+                new AccessCodesNodeData()
+                {
+                    node = accessNode,
+                    id = 0
+                }
+            };
 
             NetworkServer.Spawn(acMissionControllerInstance);
         }
