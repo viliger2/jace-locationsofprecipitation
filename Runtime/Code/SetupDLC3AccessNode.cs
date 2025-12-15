@@ -25,9 +25,6 @@ namespace LOP {
         [Tooltip("Ignore Solus Wing defeat.")]
         private bool ignoreSolusWing = false;
 
-        private AccessCodesMissionController acMissionController;
-
-
         [SystemInitializer]
         private static IEnumerator SystemInit()
         {
@@ -69,6 +66,7 @@ namespace LOP {
                 yield return null;
             shPortalSpawner.portalSpawnCard = shPortalCardRequest.Result;
         }
+
         public void Start()
         {
             //Access Node
@@ -78,7 +76,7 @@ namespace LOP {
 
             GameObject acMissionControllerInstance = GameObject.Instantiate(accessNodeMissionController);
             AccessCodesMissionController acMissionControllerComp = acMissionControllerInstance.GetComponent<AccessCodesMissionController>();
-            acMissionController.ignoreSolusWingDeath = ignoreSolusWing;
+            acMissionControllerComp.ignoreSolusWingDeath = ignoreSolusWing;
 
             SolusFight solusFight = acMissionControllerInstance.GetComponent<SolusFight>();
             if (overrideBossFight)
@@ -93,7 +91,7 @@ namespace LOP {
             AccessCodesNodeData[] nodeDataArray = new AccessCodesNodeData[1];
             nodeDataArray[0] = nodeData;
 
-            acMissionController.nodes = nodeDataArray;
+            acMissionControllerComp.nodes = nodeDataArray;
 
             NetworkServer.Spawn(acMissionControllerInstance);
         }

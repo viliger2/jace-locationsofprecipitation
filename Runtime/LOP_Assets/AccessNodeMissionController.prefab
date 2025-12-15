@@ -159,7 +159,7 @@ MonoBehaviour:
   validStages: []
   invalidStages: []
   validStageTiers: 
-  registerSelfToPortalRemotelyOnActivation: 0
+  registerSelfToPortalRemotelyOnActivation: 1
 --- !u!114 &5830447605948891861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   validStages: []
   invalidStages: []
   validStageTiers: 
-  registerSelfToPortalRemotelyOnActivation: 0
+  registerSelfToPortalRemotelyOnActivation: 1
 --- !u!114 &2791176276365953893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,4 +219,4 @@ MonoBehaviour:
   validStages: []
   invalidStages: []
   validStageTiers: 
-  registerSelfToPortalRemotelyOnActivation: 0
+  registerSelfToPortalRemotelyOnActivation: 1
