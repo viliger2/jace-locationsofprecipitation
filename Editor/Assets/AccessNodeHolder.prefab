@@ -1,5 +1,197 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &846807545009077453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5087622250143675805}
+  - component: {fileID: 2695775007440321538}
+  - component: {fileID: 3921999313525350581}
+  m_Layer: 0
+  m_Name: Portal Spawner Conduit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5087622250143675805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846807545009077453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2770524176512874574}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2695775007440321538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846807545009077453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &3921999313525350581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846807545009077453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalSpawnCard: {fileID: 0}
+  spawnChance: 0
+  spawnReferenceLocation: {fileID: 0}
+  minSpawnDistance: 10
+  maxSpawnDistance: 30
+  spawnPreviewMessageToken: PORTAL_SOLUSSHOP_WILL_OPEN
+  spawnMessageToken: PORTAL_SOLUSSHOP_OPEN
+  modelChildLocator: {fileID: 0}
+  previewChildName: CEPortalIndicator
+  requiredExpansion: {fileID: 0}
+  minStagesCleared: 0
+  bannedEventFlag: 
+  spawnReferenceLocationOverride: {fileID: 0}
+  requiredEventFlag: 
+  validStages: []
+  invalidStages: []
+  validStageTiers: 
+  registerSelfToPortalRemotelyOnActivation: 0
+--- !u!1 &1738669360483217756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3277365922208219250}
+  - component: {fileID: 4033747010654935034}
+  - component: {fileID: 2503055215854228928}
+  m_Layer: 0
+  m_Name: Portal Spawner Exchange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3277365922208219250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738669360483217756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2770524176512874574}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4033747010654935034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738669360483217756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &2503055215854228928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738669360483217756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalSpawnCard: {fileID: 0}
+  spawnChance: 0
+  spawnReferenceLocation: {fileID: 0}
+  minSpawnDistance: 10
+  maxSpawnDistance: 30
+  spawnPreviewMessageToken: PORTAL_SOLUSSHOP_WILL_OPEN
+  spawnMessageToken: PORTAL_SOLUSSHOP_OPEN
+  modelChildLocator: {fileID: 0}
+  previewChildName: CEPortalIndicator
+  requiredExpansion: {fileID: 0}
+  minStagesCleared: 0
+  bannedEventFlag: 
+  spawnReferenceLocationOverride: {fileID: 0}
+  requiredEventFlag: 
+  validStages: []
+  invalidStages: []
+  validStageTiers: 
+  registerSelfToPortalRemotelyOnActivation: 0
 --- !u!1 &4791822583978847072
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,13 +215,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4791822583978847072}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1374193742607341737}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 5087622250143675805}
+  - {fileID: 6455846507903861054}
+  - {fileID: 3277365922208219250}
+  m_Father: {fileID: 1455651394649469681}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6080699861368474417
 GameObject:
@@ -43,12 +238,12 @@ GameObject:
   - component: {fileID: 1242425666293727642}
   - component: {fileID: 2473239267357313463}
   m_Layer: 0
-  m_Name: AccessNodeMissionController
+  m_Name: AccessNodeMissionController (Disabled Initially)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1275664878819798274
 Transform:
   m_ObjectHideFlags: 0
@@ -114,7 +309,19 @@ MonoBehaviour:
   ignoreSolusWingDeath: 0
   onTriggerAlternateFightServer:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1214004577766144605}
+        m_TargetAssemblyTypeName: RoR2.SolusFight, RoR2
+        m_MethodName: TriggerServer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7959942156010223477
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,11 +350,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2770524176512874574}
-  - {fileID: 5580452369065886260}
+  m_Children: []
   m_Father: {fileID: 1455651394649469681}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5595520597430079560
 MonoBehaviour:
@@ -161,6 +366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef1d29ff2a99c44b9864ea7784dbfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  solusFight: {fileID: 1214004577766144605}
+  ccPortalSpawner: {fileID: 3921999313525350581}
+  shPortalSpawner: {fileID: 5343182383398478810}
+  cePortalSpawner: {fileID: 2503055215854228928}
+  acMissionController: {fileID: 2473239267357313463}
 --- !u!1 &8265440332136523282
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +400,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1275664878819798274}
+  - {fileID: 5580452369065886260}
+  - {fileID: 2770524176512874574}
   - {fileID: 1374193742607341737}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -219,12 +431,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8873846236738372557}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1374193742607341737}
+  m_Father: {fileID: 1455651394649469681}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7855260783969610611
@@ -273,16 +485,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredExpansion: {fileID: 0}
-  conduitCanyonPortalSpawner: {fileID: 0}
-  solutionalHauntPortalSpawner: {fileID: 0}
-  computationalExchangePortalSpawner: {fileID: 0}
+  conduitCanyonPortalSpawner: {fileID: 3921999313525350581}
+  solutionalHauntPortalSpawner: {fileID: 5343182383398478810}
+  computationalExchangePortalSpawner: {fileID: 2503055215854228928}
   ForcedBossFight:
     spawnCardReference:
-      m_AssetGUID: 
+      m_AssetGUID: 14bf22df446f37549aa65eb724c1ddda
       m_SubObjectName: 
       m_SubObjectType: 
     spawnCard: {fileID: 0}
-    selectionWeight: 0
+    selectionWeight: 1
     spawnDistance: 0
     preventOverhead: 0
     minimumStageCompletions: 0
@@ -290,3 +502,99 @@ MonoBehaviour:
     forbiddenUnlockable: 
     requiredUnlockableDef: {fileID: 0}
     forbiddenUnlockableDef: {fileID: 0}
+--- !u!1 &8903390797178419869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6455846507903861054}
+  - component: {fileID: 5086079515107992002}
+  - component: {fileID: 5343182383398478810}
+  m_Layer: 0
+  m_Name: Portal Spawner Haunt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6455846507903861054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903390797178419869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2770524176512874574}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5086079515107992002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903390797178419869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &5343182383398478810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903390797178419869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalSpawnCard: {fileID: 0}
+  spawnChance: 0
+  spawnReferenceLocation: {fileID: 0}
+  minSpawnDistance: 10
+  maxSpawnDistance: 30
+  spawnPreviewMessageToken: PORTAL_SOLUSSHOP_WILL_OPEN
+  spawnMessageToken: PORTAL_SOLUSSHOP_OPEN
+  modelChildLocator: {fileID: 0}
+  previewChildName: CEPortalIndicator
+  requiredExpansion: {fileID: 0}
+  minStagesCleared: 0
+  bannedEventFlag: 
+  spawnReferenceLocationOverride: {fileID: 0}
+  requiredEventFlag: 
+  validStages: []
+  invalidStages: []
+  validStageTiers: 
+  registerSelfToPortalRemotelyOnActivation: 0
