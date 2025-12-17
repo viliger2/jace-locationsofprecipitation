@@ -31,6 +31,24 @@ MonoBehaviour:
   StagingPaths:
   - <LOP_BuildPath>
   url: https://github.com/JaceDaDorito/jace-locationsofprecipitation
+--- !u!114 &-2547221358529535332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d1008b78cb6e846889b7778282fbef, type: 3}
+  m_Name: AssetBundleDefinitions
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <LOP_BuildPath>
+  assetBundles:
+  - assetBundleName: runtimelopassetbundle
+    assets:
+    - {fileID: 102900000, guid: 8beee281dd7d5c94d8da45062e6ea522, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,6 +66,7 @@ MonoBehaviour:
   - {fileID: -7126145015298338206}
   - {fileID: -3047459398258836019}
   - {fileID: 7582602273300430923}
+  - {fileID: -2547221358529535332}
   identity: {fileID: 5277680460863182017}
   QuickAccess: 0
 --- !u!114 &5277680460863182017

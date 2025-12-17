@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1867813586803092972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6646504582012177375}
+  - component: {fileID: 6680185486858610503}
+  - component: {fileID: 8060181934212919146}
+  - component: {fileID: 3832649821206398493}
+  - component: {fileID: 9050568822756942014}
+  - component: {fileID: 5830447605948891861}
+  - component: {fileID: 2791176276365953893}
+  m_Layer: 0
+  m_Name: AccessNodeMissionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6646504582012177375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6680185486858610503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &8060181934212919146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 92019205, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredExpansion: {fileID: 0}
+  nodes: []
+  ignoreSolusWingDeath: 0
+  onTriggerAlternateFightServer:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3832649821206398493}
+        m_TargetAssemblyTypeName: RoR2.SolusFight, RoR2
+        m_MethodName: TriggerServer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3832649821206398493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1554088784, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredExpansion: {fileID: 0}
+  conduitCanyonPortalSpawner: {fileID: 9050568822756942014}
+  solutionalHauntPortalSpawner: {fileID: 5830447605948891861}
+  computationalExchangePortalSpawner: {fileID: 2791176276365953893}
+  ForcedBossFight:
+    spawnCardReference:
+      m_AssetGUID: 14bf22df446f37549aa65eb724c1ddda
+      m_SubObjectName: 
+      m_SubObjectType: 
+    spawnCard: {fileID: 0}
+    selectionWeight: 1
+    spawnDistance: 0
+    preventOverhead: 0
+    minimumStageCompletions: 0
+    requiredUnlockable: 
+    forbiddenUnlockable: 
+    requiredUnlockableDef: {fileID: 0}
+    forbiddenUnlockableDef: {fileID: 0}
+--- !u!114 &9050568822756942014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalSpawnCard: {fileID: 0}
+  spawnChance: 0
+  spawnReferenceLocation: {fileID: 0}
+  minSpawnDistance: 10
+  maxSpawnDistance: 30
+  spawnPreviewMessageToken: PORTAL_SOLUSSHOP_WILL_OPEN
+  spawnMessageToken: PORTAL_SOLUSSHOP_OPEN
+  modelChildLocator: {fileID: 0}
+  previewChildName: CEPortalIndicator
+  requiredExpansion: {fileID: 0}
+  minStagesCleared: 0
+  bannedEventFlag: 
+  spawnReferenceLocationOverride: {fileID: 0}
+  requiredEventFlag: 
+  validStages: []
+  invalidStages: []
+  validStageTiers: 
+  registerSelfToPortalRemotelyOnActivation: 1
+--- !u!114 &5830447605948891861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalSpawnCard: {fileID: 0}
+  spawnChance: 0
+  spawnReferenceLocation: {fileID: 0}
+  minSpawnDistance: 10
+  maxSpawnDistance: 30
+  spawnPreviewMessageToken: PORTAL_SOLUSSHOP_WILL_OPEN
+  spawnMessageToken: PORTAL_SOLUSSHOP_OPEN
+  modelChildLocator: {fileID: 0}
+  previewChildName: CEPortalIndicator
+  requiredExpansion: {fileID: 0}
+  minStagesCleared: 0
+  bannedEventFlag: 
+  spawnReferenceLocationOverride: {fileID: 0}
+  requiredEventFlag: 
+  validStages: []
+  invalidStages: []
+  validStageTiers: 
+  registerSelfToPortalRemotelyOnActivation: 1
+--- !u!114 &2791176276365953893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867813586803092972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalSpawnCard: {fileID: 0}
+  spawnChance: 0
+  spawnReferenceLocation: {fileID: 0}
+  minSpawnDistance: 10
+  maxSpawnDistance: 30
+  spawnPreviewMessageToken: PORTAL_SOLUSSHOP_WILL_OPEN
+  spawnMessageToken: PORTAL_SOLUSSHOP_OPEN
+  modelChildLocator: {fileID: 0}
+  previewChildName: CEPortalIndicator
+  requiredExpansion: {fileID: 0}
+  minStagesCleared: 0
+  bannedEventFlag: 
+  spawnReferenceLocationOverride: {fileID: 0}
+  requiredEventFlag: 
+  validStages: []
+  invalidStages: []
+  validStageTiers: 
+  registerSelfToPortalRemotelyOnActivation: 1
