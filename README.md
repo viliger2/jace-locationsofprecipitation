@@ -13,6 +13,7 @@ A stage modding toolkit that streamlines addressable asset usability in a scene.
 - ``InstantiateGeyserPrefab`` which allows you to instantiate and configure most of RoR2's jump pads.
 ![](https://i.imgur.com/XZqDqxS.png)
 - ``InstantiateLogbookPrefab`` which allows you to instantiate and configure a logbook pickup prefab.
+- ``SetupDLC3AccessNode`` which sets up the DLC3 access node event automatically. Needs Points of Interest on the map.
 ![](https://i.imgur.com/ZJj07nv.png)
 ## Credits
 - Initial scripts by IDeathHD / Quentin
